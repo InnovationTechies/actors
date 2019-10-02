@@ -11,7 +11,6 @@
             <asp:BoundField DataField="actID" HeaderText="actID" SortExpression="actID" />
             <asp:BoundField DataField="actName" HeaderText="actName" SortExpression="actName" />
             <asp:BoundField DataField="actSurname" HeaderText="actSurname" SortExpression="actSurname" />
-            <asp:BoundField DataField="ProjectID" HeaderText="ProjectID" SortExpression="ProjectID" />
         </Columns>
         <EditRowStyle BackColor="#2461BF" />
         <FooterStyle BackColor="#507CD1" Font-Bold="True" ForeColor="White" />
@@ -37,10 +36,9 @@
         <CommandRowStyle BackColor="#FFFFC0" Font-Bold="True" />
         <FieldHeaderStyle BackColor="#FFFF99" Font-Bold="True" />
         <Fields>
-            <asp:BoundField DataField="actID" HeaderText="actID" SortExpression="actID" Visible="false" /> 
+            <asp:BoundField DataField="actID" HeaderText="actID" SortExpression="actID" Visible="false"/> 
             <asp:BoundField DataField="actName" HeaderText="actName" SortExpression="actName" />
             <asp:BoundField DataField="actSurname" HeaderText="actSurname" SortExpression="actSurname" />
-            <asp:BoundField DataField="ProjectID" HeaderText="ProjectID" SortExpression="ProjectID" />
             <asp:CommandField ShowInsertButton="True" />
         </Fields>
         <FooterStyle BackColor="#990000" Font-Bold="True" ForeColor="White" />
@@ -52,5 +50,11 @@
     <br />
     <br />
     <br />
+    <asp:ObjectDataSource ID="ObjectDataSource2" runat="server" OnSelecting="ObjectDataSource2_Selecting"></asp:ObjectDataSource>
+    <br />
+    <br />
+    
+    <br />
+
     <br />
 </asp:Content>

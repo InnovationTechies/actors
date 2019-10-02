@@ -3,7 +3,7 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 15
 VisualStudioVersion = 15.0.28307.779
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RooftopActors", "RooftopActors\RooftopActors.csproj", "{B0EEB2A7-1750-4267-B443-3A411F775A8E}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RooftopActorsV3", "RooftopActorsV3\RooftopActorsV3.csproj", "{14E749AB-D758-45C8-8367-4DA4C9C236B5}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -11,10 +11,10 @@ Global
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{B0EEB2A7-1750-4267-B443-3A411F775A8E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{B0EEB2A7-1750-4267-B443-3A411F775A8E}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{B0EEB2A7-1750-4267-B443-3A411F775A8E}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{B0EEB2A7-1750-4267-B443-3A411F775A8E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{14E749AB-D758-45C8-8367-4DA4C9C236B5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{14E749AB-D758-45C8-8367-4DA4C9C236B5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{14E749AB-D758-45C8-8367-4DA4C9C236B5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{14E749AB-D758-45C8-8367-4DA4C9C236B5}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
