@@ -16,6 +16,8 @@ namespace RooftopActorsV3.Models
         public string actName { get; set; }
         public string actSurname { get; set; }
         //public Image Image { get; set; }
+        public byte[] actImage { get; set; }
+
 
         //[ForeignKey("ProjectID")]
         //public Project Project { get; set; }

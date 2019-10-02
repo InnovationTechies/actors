@@ -1,0 +1,45 @@
+﻿@model IEnumerable<RooftopActorsV3.Models.Actors>
+
+@{
+    ViewBag.Title = "IndexActors";
+}
+
+<h2>IndexActors</h2>
+
+<p>
+    @Html.ActionLink("Create New", "Create")
+</p>
+<table class="table">
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.actName)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.actSurname)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.actImage)
+        </th>
+        <th></th>
+    </tr>
+
+@foreach (var item in Model) {
+    <tr>
+        <td>
+            @Html.DisplayFor(modelItem => item.actName)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.actSurname)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.actImage)
+        </td>
+        <td>
+            @Html.ActionLink("Edit", "Edit", new { id=item.actID }) |
+            @Html.ActionLink("Details", "Details", new { id=item.actID }) |
+            @Html.ActionLink("Delete", "Delete", new { id=item.actID })
+        </td>
+    </tr>
+}
+
+</table>

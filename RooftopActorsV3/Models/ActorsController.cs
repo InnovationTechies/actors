@@ -19,6 +19,22 @@ namespace RooftopActorsV3.Models
             return View(db.Actors.ToList());
         }
 
+        public ActionResult IndexActors()
+        {
+            List<Actors> actors = db.Actors.ToList();
+
+            foreach (var actor in actors)
+            {
+                //Convert byte arry to base64string   
+                string imreBase64Data = Convert.ToBase64String(actor.actImage);
+                string imgDataURL = string.Format("data:image/png;base64,{0}", imreBase64Data);
+                //Passing image data in viewbag to view  
+                ViewBag.ImageData += imgDataURL;
+            }
+
+            return View(db.Actors.ToList());
+        }
+
         // GET: Actors/Details/5
         public ActionResult Details(int? id)
         {
@@ -46,6 +62,23 @@ namespace RooftopActorsV3.Models
         [HttpPost]
         [ValidateAntiForgeryToken]
         public ActionResult Create([Bind(Include = "actID,actName,actSurname")] Actors actors)
+        {
+            if (ModelState.IsValid)
+            {
+                db.Actors.Add(actors);
+                db.SaveChanges();
+                return RedirectToAction("Index");
+            }
+
+            return View(actors);
+        }
+
+        // POST: Actors/Create
+        // To protect from overposting attacks, please enable the specific properties you want to bind to, for 
+        // more details see https://go.microsoft.com/fwlink/?LinkId=317598.
+        [HttpPost]
+        [ValidateAntiForgeryToken]
+        public ActionResult CreateImage([Bind(Include = "actID,actName,actSurname,actImage")] Actors actors)
         {
             if (ModelState.IsValid)
             {

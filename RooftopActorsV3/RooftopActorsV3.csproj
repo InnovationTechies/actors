@@ -147,6 +147,10 @@
     <Content Include="fonts\glyphicons-halflings-regular.svg" />
     <Content Include="Global.asax" />
     <Content Include="Content\Site.css" />
+    <Content Include="Images\favicon-01.png" />
+    <Content Include="Images\favicon.png" />
+    <Content Include="Images\Rooftop-Productions-Logo-black.png" />
+    <Content Include="Images\Rooftop-Productions-Logo.png" />
     <Content Include="Scripts\bootstrap.js" />
     <Content Include="Scripts\bootstrap.min.js" />
     <None Include="Scripts\jquery-3.3.1.intellisense.js" />
@@ -181,6 +185,7 @@
     <Content Include="Views\Actors\Details.cshtml" />
     <Content Include="Views\Actors\Edit.cshtml" />
     <Content Include="Views\Actors\Index.cshtml" />
+    <Content Include="Views\Actors\IndexActors.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
